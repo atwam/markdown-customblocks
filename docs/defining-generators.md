@@ -11,8 +11,8 @@ import markdown
 md = markdown.Markdown(
     extensions=["customblocks"],
     extension_configs=dict(
-        generators=dict(
-            customblocks={
+        customblocks=dict(
+            generators={
                 # by direct symbol reference
                 'mytype': mypackage.mymodule.mytype,
                 # or using import strings (notice the colon)
